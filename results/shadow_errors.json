@@ -1,0 +1,1779 @@
+{
+ "error_decomposition": {
+  "cells": {
+   "SN/G/2": {
+    "mse": 0.002095992089327021,
+    "squared_context_mean_error": 0.0003418577177609238,
+    "variance_of_context_error": 0.0017541343715660978,
+    "signed_mean_error": 0.01826306402230812
+   },
+   "SW/G/2": {
+    "mse": 0.001773002794795862,
+    "squared_context_mean_error": 3.569181111745148e-06,
+    "variance_of_context_error": 0.0017694336136841174,
+    "signed_mean_error": 0.00020860533648989142
+   },
+   "SN/C80/2": {
+    "mse": 0.002155916549691385,
+    "squared_context_mean_error": 0.00042865388288000584,
+    "variance_of_context_error": 0.0017272626668113785,
+    "signed_mean_error": 0.020442958877126927
+   },
+   "SW/C80/2": {
+    "mse": 0.001725881572665584,
+    "squared_context_mean_error": 3.69799571887502e-06,
+    "variance_of_context_error": 0.0017221835769467098,
+    "signed_mean_error": 0.0005347161403872384
+   },
+   "SN/C95/2": {
+    "mse": 0.0020904536924031907,
+    "squared_context_mean_error": 0.00036240581627888183,
+    "variance_of_context_error": 0.001728047876124309,
+    "signed_mean_error": 0.01884143420587569
+   },
+   "SW/C95/2": {
+    "mse": 0.0017646468973285005,
+    "squared_context_mean_error": 3.245828976121613e-06,
+    "variance_of_context_error": 0.0017614010683523794,
+    "signed_mean_error": 0.00046652296865891255
+   },
+   "SN/G/20": {
+    "mse": 0.0038008481001352012,
+    "squared_context_mean_error": 8.385621184471907e-05,
+    "variance_of_context_error": 0.003716991888290482,
+    "signed_mean_error": 0.007725572669853317
+   },
+   "SW/G/20": {
+    "mse": 0.0037790944043658535,
+    "squared_context_mean_error": 5.315018344873953e-06,
+    "variance_of_context_error": 0.003773779386020979,
+    "signed_mean_error": 0.00010834251345254962
+   },
+   "SN/C80/20": {
+    "mse": 0.0037890617802456283,
+    "squared_context_mean_error": 0.00010433540575994527,
+    "variance_of_context_error": 0.0036847263744856818,
+    "signed_mean_error": 0.008617530978031446
+   },
+   "SW/C80/20": {
+    "mse": 0.003744405147395466,
+    "squared_context_mean_error": 5.26741728098098e-06,
+    "variance_of_context_error": 0.0037391377301144845,
+    "signed_mean_error": 0.00015588826635113748
+   },
+   "SN/C95/20": {
+    "mse": 0.003785745409625944,
+    "squared_context_mean_error": 8.724914182141489e-05,
+    "variance_of_context_error": 0.0036984962678045285,
+    "signed_mean_error": 0.007877292219033374
+   },
+   "SW/C95/20": {
+    "mse": 0.003766248401337852,
+    "squared_context_mean_error": 4.960572019451272e-06,
+    "variance_of_context_error": 0.0037612878293184007,
+    "signed_mean_error": 0.00011870129312788403
+   }
+  },
+  "pooled": {
+   "all": {
+    "SN": {
+     "mse": 0.0029530029369047284,
+     "squared_context_mean_error": 0.0002347263627243151,
+     "variance_of_context_error": 0.0027182765741804132,
+     "signed_mean_error": 0.013627975495371479
+    },
+    "SW": {
+     "mse": 0.002758879869648186,
+     "squared_context_mean_error": 4.3426689086746645e-06,
+     "variance_of_context_error": 0.002754537200739512,
+     "signed_mean_error": 0.0002654627530779356
+    },
+    "SN_minus_SW": {
+     "mse": 0.0001941230672565424,
+     "squared_context_mean_error": 0.00023038369381564043,
+     "variance_of_context_error": -3.626062655909864e-05,
+     "signed_mean_error": 0.013362512742293543
+    }
+   },
+   "J2": {
+    "SN": {
+     "mse": 0.0021141207771405326,
+     "squared_context_mean_error": 0.0003776391389732705,
+     "variance_of_context_error": 0.0017364816381672619,
+     "signed_mean_error": 0.019182485701770245
+    },
+    "SW": {
+     "mse": 0.001754510421596649,
+     "squared_context_mean_error": 3.504335268913927e-06,
+     "variance_of_context_error": 0.0017510060863277354,
+     "signed_mean_error": 0.00040328148184534744
+    },
+    "SN_minus_SW": {
+     "mse": 0.0003596103555438836,
+     "squared_context_mean_error": 0.00037413480370435657,
+     "variance_of_context_error": -1.4524448160473493e-05,
+     "signed_mean_error": 0.0187792042199249
+    }
+   },
+   "J20": {
+    "SN": {
+     "mse": 0.0037918850966689246,
+     "squared_context_mean_error": 9.181358647535974e-05,
+     "variance_of_context_error": 0.0037000715101935637,
+     "signed_mean_error": 0.008073465288972714
+    },
+    "SW": {
+     "mse": 0.003763249317699724,
+     "squared_context_mean_error": 5.1810025484354016e-06,
+     "variance_of_context_error": 0.003758068315151288,
+     "signed_mean_error": 0.0001276440243105237
+    },
+    "SN_minus_SW": {
+     "mse": 2.863577896920072e-05,
+     "squared_context_mean_error": 8.663258392692434e-05,
+     "variance_of_context_error": -5.799680495772444e-05,
+     "signed_mean_error": 0.00794582126466219
+    }
+   }
+  }
+ },
+ "forecast_diagnostic": {
+  "bundles": 16,
+  "cells": [
+   {
+    "controller": "G",
+    "subtypes": 2,
+    "responses": 38400,
+    "mean_p": 0.4685011916703284,
+    "mean_y": 0.4745052083333333,
+    "mean_p_minus_mean_y": -0.006004016663004943
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "responses": 38400,
+    "mean_p": 0.47062629760590663,
+    "mean_y": 0.475234375,
+    "mean_p_minus_mean_y": -0.0046080773940933755
+   },
+   {
+    "controller": "C80",
+    "subtypes": 2,
+    "responses": 38400,
+    "mean_p": 0.4801633898743256,
+    "mean_y": 0.4859895833333333,
+    "mean_p_minus_mean_y": -0.005826193459007717
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "responses": 38400,
+    "mean_p": 0.48304659690100843,
+    "mean_y": 0.4886197916666667,
+    "mean_p_minus_mean_y": -0.00557319476565823
+   },
+   {
+    "controller": "C95",
+    "subtypes": 2,
+    "responses": 38400,
+    "mean_p": 0.4711918004045266,
+    "mean_y": 0.47760416666666666,
+    "mean_p_minus_mean_y": -0.006412366262140097
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "responses": 38400,
+    "mean_p": 0.47316406064969213,
+    "mean_y": 0.47747395833333334,
+    "mean_p_minus_mean_y": -0.004309897683641187
+   }
+  ],
+  "contexts": [
+   {
+    "controller": "C80",
+    "subtypes": 2,
+    "context": 0,
+    "count": 7895,
+    "mean_p": 0.48776482314734937,
+    "mean_y": 0.4941101963267891
+   },
+   {
+    "controller": "C80",
+    "subtypes": 2,
+    "context": 1,
+    "count": 5174,
+    "mean_p": 0.48512439409954844,
+    "mean_y": 0.4824120603015075
+   },
+   {
+    "controller": "C80",
+    "subtypes": 2,
+    "context": 2,
+    "count": 7568,
+    "mean_p": 0.4739041252242649,
+    "mean_y": 0.4792547568710359
+   },
+   {
+    "controller": "C80",
+    "subtypes": 2,
+    "context": 3,
+    "count": 5001,
+    "mean_p": 0.47408640807164876,
+    "mean_y": 0.484503099380124
+   },
+   {
+    "controller": "C80",
+    "subtypes": 2,
+    "context": 4,
+    "count": 7591,
+    "mean_p": 0.4779775860930166,
+    "mean_y": 0.4820181794230009
+   },
+   {
+    "controller": "C80",
+    "subtypes": 2,
+    "context": 5,
+    "count": 5171,
+    "mean_p": 0.48184043219088646,
+    "mean_y": 0.4942951073293367
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 0,
+    "count": 3607,
+    "mean_p": 0.4901676470066562,
+    "mean_y": 0.49625727751594123
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 1,
+    "count": 1861,
+    "mean_p": 0.48263311631592926,
+    "mean_y": 0.48199892530897365
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 2,
+    "count": 1226,
+    "mean_p": 0.48961171587067437,
+    "mean_y": 0.49592169657422513
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 3,
+    "count": 933,
+    "mean_p": 0.48823260224969783,
+    "mean_y": 0.5016077170418006
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 4,
+    "count": 723,
+    "mean_p": 0.49740984430052554,
+    "mean_y": 0.47164591977869985
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 5,
+    "count": 623,
+    "mean_p": 0.4722257624781163,
+    "mean_y": 0.45425361155698235
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 6,
+    "count": 525,
+    "mean_p": 0.4812598110375297,
+    "mean_y": 0.4704761904761905
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 7,
+    "count": 438,
+    "mean_p": 0.48888468111498423,
+    "mean_y": 0.4748858447488584
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 8,
+    "count": 383,
+    "mean_p": 0.49260976984601784,
+    "mean_y": 0.4908616187989556
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 9,
+    "count": 366,
+    "mean_p": 0.4669063463014204,
+    "mean_y": 0.4672131147540984
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 10,
+    "count": 355,
+    "mean_p": 0.494328183718939,
+    "mean_y": 0.4676056338028169
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 11,
+    "count": 282,
+    "mean_p": 0.49324547475087005,
+    "mean_y": 0.46099290780141844
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 12,
+    "count": 275,
+    "mean_p": 0.48776615951057195,
+    "mean_y": 0.5309090909090909
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 13,
+    "count": 260,
+    "mean_p": 0.5093169844967336,
+    "mean_y": 0.47692307692307695
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 14,
+    "count": 211,
+    "mean_p": 0.49397992962508847,
+    "mean_y": 0.5071090047393365
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 15,
+    "count": 230,
+    "mean_p": 0.4703161286789397,
+    "mean_y": 0.48695652173913045
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 16,
+    "count": 209,
+    "mean_p": 0.4879735231847708,
+    "mean_y": 0.4688995215311005
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 17,
+    "count": 205,
+    "mean_p": 0.5036113185589493,
+    "mean_y": 0.47804878048780486
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 18,
+    "count": 214,
+    "mean_p": 0.48241616551252203,
+    "mean_y": 0.49065420560747663
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 19,
+    "count": 208,
+    "mean_p": 0.5034646972323047,
+    "mean_y": 0.5288461538461539
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 20,
+    "count": 3409,
+    "mean_p": 0.4792026557930778,
+    "mean_y": 0.48899970665884424
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 21,
+    "count": 1821,
+    "mean_p": 0.47869532232026735,
+    "mean_y": 0.471169686985173
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 22,
+    "count": 1169,
+    "mean_p": 0.47379478262311403,
+    "mean_y": 0.48588537211291705
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 23,
+    "count": 853,
+    "mean_p": 0.46808908946316047,
+    "mean_y": 0.46072684642438455
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 24,
+    "count": 686,
+    "mean_p": 0.4839210982661837,
+    "mean_y": 0.4970845481049563
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 25,
+    "count": 624,
+    "mean_p": 0.4903743890212095,
+    "mean_y": 0.5176282051282052
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 26,
+    "count": 517,
+    "mean_p": 0.4830071923204976,
+    "mean_y": 0.4526112185686654
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 27,
+    "count": 401,
+    "mean_p": 0.4652833059917696,
+    "mean_y": 0.4688279301745636
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 28,
+    "count": 414,
+    "mean_p": 0.4616565214614648,
+    "mean_y": 0.4806763285024155
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 29,
+    "count": 347,
+    "mean_p": 0.46642822553310814,
+    "mean_y": 0.4697406340057637
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 30,
+    "count": 342,
+    "mean_p": 0.4667700553439373,
+    "mean_y": 0.4619883040935672
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 31,
+    "count": 312,
+    "mean_p": 0.48347263184766615,
+    "mean_y": 0.4583333333333333
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 32,
+    "count": 277,
+    "mean_p": 0.4785697613913471,
+    "mean_y": 0.49458483754512633
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 33,
+    "count": 255,
+    "mean_p": 0.4407094892543008,
+    "mean_y": 0.4745098039215686
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 34,
+    "count": 235,
+    "mean_p": 0.48374590670723955,
+    "mean_y": 0.4978723404255319
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 35,
+    "count": 214,
+    "mean_p": 0.47903782770673664,
+    "mean_y": 0.5373831775700935
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 36,
+    "count": 219,
+    "mean_p": 0.4895946295694031,
+    "mean_y": 0.4611872146118721
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 37,
+    "count": 191,
+    "mean_p": 0.4745061387236282,
+    "mean_y": 0.4869109947643979
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 38,
+    "count": 174,
+    "mean_p": 0.48911998827074726,
+    "mean_y": 0.4885057471264368
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 39,
+    "count": 151,
+    "mean_p": 0.46250574938727274,
+    "mean_y": 0.5099337748344371
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 40,
+    "count": 3531,
+    "mean_p": 0.48394285845495943,
+    "mean_y": 0.5063721325403568
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 41,
+    "count": 1743,
+    "mean_p": 0.48363847475089816,
+    "mean_y": 0.47217441193344806
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 42,
+    "count": 1221,
+    "mean_p": 0.48508196538978554,
+    "mean_y": 0.4823914823914824
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 43,
+    "count": 901,
+    "mean_p": 0.48532883785881153,
+    "mean_y": 0.48057713651498335
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 44,
+    "count": 704,
+    "mean_p": 0.4894649920580706,
+    "mean_y": 0.4786931818181818
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 45,
+    "count": 573,
+    "mean_p": 0.4827988470164349,
+    "mean_y": 0.493891797556719
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 46,
+    "count": 462,
+    "mean_p": 0.49330515145958154,
+    "mean_y": 0.525974025974026
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 47,
+    "count": 414,
+    "mean_p": 0.49290888498963,
+    "mean_y": 0.5048309178743962
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 48,
+    "count": 367,
+    "mean_p": 0.4896474029376708,
+    "mean_y": 0.47411444141689374
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 49,
+    "count": 360,
+    "mean_p": 0.477107185619042,
+    "mean_y": 0.5083333333333333
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 50,
+    "count": 322,
+    "mean_p": 0.47197555027970384,
+    "mean_y": 0.5
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 51,
+    "count": 295,
+    "mean_p": 0.47966834988061346,
+    "mean_y": 0.46440677966101696
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 52,
+    "count": 272,
+    "mean_p": 0.4933749943480631,
+    "mean_y": 0.5477941176470589
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 53,
+    "count": 288,
+    "mean_p": 0.4759643952152354,
+    "mean_y": 0.5347222222222222
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 54,
+    "count": 239,
+    "mean_p": 0.4813232657501272,
+    "mean_y": 0.5062761506276151
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 55,
+    "count": 209,
+    "mean_p": 0.47972975336512463,
+    "mean_y": 0.5502392344497608
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 56,
+    "count": 192,
+    "mean_p": 0.4700334630395846,
+    "mean_y": 0.46875
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 57,
+    "count": 198,
+    "mean_p": 0.4843411027173425,
+    "mean_y": 0.5151515151515151
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 58,
+    "count": 187,
+    "mean_p": 0.49424523393339653,
+    "mean_y": 0.5935828877005348
+   },
+   {
+    "controller": "C80",
+    "subtypes": 20,
+    "context": 59,
+    "count": 177,
+    "mean_p": 0.4822395981444698,
+    "mean_y": 0.4689265536723164
+   },
+   {
+    "controller": "C95",
+    "subtypes": 2,
+    "context": 0,
+    "count": 7900,
+    "mean_p": 0.4793231143724506,
+    "mean_y": 0.4820253164556962
+   },
+   {
+    "controller": "C95",
+    "subtypes": 2,
+    "context": 1,
+    "count": 5152,
+    "mean_p": 0.4747025501450428,
+    "mean_y": 0.47573757763975155
+   },
+   {
+    "controller": "C95",
+    "subtypes": 2,
+    "context": 2,
+    "count": 7546,
+    "mean_p": 0.46519360794990017,
+    "mean_y": 0.474025974025974
+   },
+   {
+    "controller": "C95",
+    "subtypes": 2,
+    "context": 3,
+    "count": 5026,
+    "mean_p": 0.46762671690494206,
+    "mean_y": 0.479108635097493
+   },
+   {
+    "controller": "C95",
+    "subtypes": 2,
+    "context": 4,
+    "count": 7608,
+    "mean_p": 0.46876408589110513,
+    "mean_y": 0.472397476340694
+   },
+   {
+    "controller": "C95",
+    "subtypes": 2,
+    "context": 5,
+    "count": 5168,
+    "mean_p": 0.47106133580311277,
+    "mean_y": 0.4841331269349845
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 0,
+    "count": 3592,
+    "mean_p": 0.48044151022848075,
+    "mean_y": 0.4869153674832962
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 1,
+    "count": 1866,
+    "mean_p": 0.47558667548365535,
+    "mean_y": 0.4705251875669882
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 2,
+    "count": 1218,
+    "mean_p": 0.47821080339698097,
+    "mean_y": 0.4876847290640394
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 3,
+    "count": 943,
+    "mean_p": 0.48326989924357977,
+    "mean_y": 0.4984093319194062
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 4,
+    "count": 701,
+    "mean_p": 0.4770682578039199,
+    "mean_y": 0.44079885877318115
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 5,
+    "count": 627,
+    "mean_p": 0.46416078656234067,
+    "mean_y": 0.4370015948963317
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 6,
+    "count": 513,
+    "mean_p": 0.4651900262611737,
+    "mean_y": 0.45419103313840153
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 7,
+    "count": 432,
+    "mean_p": 0.4740142452837332,
+    "mean_y": 0.46296296296296297
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 8,
+    "count": 384,
+    "mean_p": 0.4860056939351489,
+    "mean_y": 0.4921875
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 9,
+    "count": 369,
+    "mean_p": 0.465030523950153,
+    "mean_y": 0.46883468834688347
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 10,
+    "count": 347,
+    "mean_p": 0.486184606173526,
+    "mean_y": 0.4409221902017291
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 11,
+    "count": 288,
+    "mean_p": 0.48792284290307986,
+    "mean_y": 0.4583333333333333
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 12,
+    "count": 286,
+    "mean_p": 0.49454879040897803,
+    "mean_y": 0.5209790209790209
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 13,
+    "count": 257,
+    "mean_p": 0.495002579784471,
+    "mean_y": 0.45525291828793774
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 14,
+    "count": 203,
+    "mean_p": 0.47187687218171687,
+    "mean_y": 0.45320197044334976
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 15,
+    "count": 231,
+    "mean_p": 0.4713541300992106,
+    "mean_y": 0.5021645021645021
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 16,
+    "count": 204,
+    "mean_p": 0.47366661373591235,
+    "mean_y": 0.46568627450980393
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 17,
+    "count": 204,
+    "mean_p": 0.4989682839704172,
+    "mean_y": 0.46568627450980393
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 18,
+    "count": 203,
+    "mean_p": 0.4605182227754692,
+    "mean_y": 0.46798029556650245
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 19,
+    "count": 188,
+    "mean_p": 0.47502789257957445,
+    "mean_y": 0.48404255319148937
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 20,
+    "count": 3431,
+    "mean_p": 0.4710327007555245,
+    "mean_y": 0.4782862139317983
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 21,
+    "count": 1818,
+    "mean_p": 0.4673194061038278,
+    "mean_y": 0.46204620462046203
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 22,
+    "count": 1191,
+    "mean_p": 0.4718754521690083,
+    "mean_y": 0.4869857262804366
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 23,
+    "count": 851,
+    "mean_p": 0.4535654629101803,
+    "mean_y": 0.44653349001175086
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 24,
+    "count": 704,
+    "mean_p": 0.47699478066668866,
+    "mean_y": 0.4971590909090909
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 25,
+    "count": 619,
+    "mean_p": 0.47589412085677396,
+    "mean_y": 0.5121163166397416
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 26,
+    "count": 537,
+    "mean_p": 0.47707501453403,
+    "mean_y": 0.44878957169459965
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 27,
+    "count": 415,
+    "mean_p": 0.47271314679196585,
+    "mean_y": 0.46987951807228917
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 28,
+    "count": 412,
+    "mean_p": 0.4537111619166239,
+    "mean_y": 0.47815533980582525
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 29,
+    "count": 347,
+    "mean_p": 0.46356612438493566,
+    "mean_y": 0.4553314121037464
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 30,
+    "count": 348,
+    "mean_p": 0.4630647215812445,
+    "mean_y": 0.46551724137931033
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 31,
+    "count": 300,
+    "mean_p": 0.4667770885365891,
+    "mean_y": 0.45
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 32,
+    "count": 274,
+    "mean_p": 0.45999289188147535,
+    "mean_y": 0.4781021897810219
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 33,
+    "count": 267,
+    "mean_p": 0.4413930682953512,
+    "mean_y": 0.46441947565543074
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 34,
+    "count": 236,
+    "mean_p": 0.4832379943532706,
+    "mean_y": 0.5169491525423728
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 35,
+    "count": 217,
+    "mean_p": 0.4670903663517337,
+    "mean_y": 0.5253456221198156
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 36,
+    "count": 224,
+    "mean_p": 0.4822266135315761,
+    "mean_y": 0.44642857142857145
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 37,
+    "count": 191,
+    "mean_p": 0.4582962417047331,
+    "mean_y": 0.4712041884816754
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 38,
+    "count": 177,
+    "mean_p": 0.4796188573182207,
+    "mean_y": 0.480225988700565
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 39,
+    "count": 163,
+    "mean_p": 0.4660229274527509,
+    "mean_y": 0.49079754601226994
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 40,
+    "count": 3524,
+    "mean_p": 0.47165804563902924,
+    "mean_y": 0.4948921679909194
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 41,
+    "count": 1741,
+    "mean_p": 0.47380058455725804,
+    "mean_y": 0.46410109132682364
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 42,
+    "count": 1207,
+    "mean_p": 0.4705165489088781,
+    "mean_y": 0.4523612261806131
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 43,
+    "count": 893,
+    "mean_p": 0.4724413264445084,
+    "mean_y": 0.46472564389697646
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 44,
+    "count": 708,
+    "mean_p": 0.4777183173649899,
+    "mean_y": 0.4717514124293785
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 45,
+    "count": 574,
+    "mean_p": 0.4703577753755122,
+    "mean_y": 0.48257839721254353
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 46,
+    "count": 454,
+    "mean_p": 0.4778888903976337,
+    "mean_y": 0.5110132158590308
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 47,
+    "count": 406,
+    "mean_p": 0.48238896389200975,
+    "mean_y": 0.49014778325123154
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 48,
+    "count": 368,
+    "mean_p": 0.4740492443257352,
+    "mean_y": 0.46467391304347827
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 49,
+    "count": 357,
+    "mean_p": 0.4668689980802187,
+    "mean_y": 0.48739495798319327
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 50,
+    "count": 324,
+    "mean_p": 0.4619449505331293,
+    "mean_y": 0.4783950617283951
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 51,
+    "count": 301,
+    "mean_p": 0.47477945395579674,
+    "mean_y": 0.43521594684385384
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 52,
+    "count": 264,
+    "mean_p": 0.4739414190259932,
+    "mean_y": 0.5303030303030303
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 53,
+    "count": 279,
+    "mean_p": 0.46349975605521154,
+    "mean_y": 0.5197132616487455
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 54,
+    "count": 246,
+    "mean_p": 0.47727991911280504,
+    "mean_y": 0.4959349593495935
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 55,
+    "count": 205,
+    "mean_p": 0.4669616858846767,
+    "mean_y": 0.5121951219512195
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 56,
+    "count": 192,
+    "mean_p": 0.4547943453272121,
+    "mean_y": 0.4583333333333333
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 57,
+    "count": 199,
+    "mean_p": 0.4652721903973339,
+    "mean_y": 0.49246231155778897
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 58,
+    "count": 195,
+    "mean_p": 0.4975331968604385,
+    "mean_y": 0.6
+   },
+   {
+    "controller": "C95",
+    "subtypes": 20,
+    "context": 59,
+    "count": 185,
+    "mean_p": 0.4871581568874983,
+    "mean_y": 0.4756756756756757
+   },
+   {
+    "controller": "G",
+    "subtypes": 2,
+    "context": 0,
+    "count": 7826,
+    "mean_p": 0.47189552176118726,
+    "mean_y": 0.47457193968821876
+   },
+   {
+    "controller": "G",
+    "subtypes": 2,
+    "context": 1,
+    "count": 5143,
+    "mean_p": 0.4708968179236236,
+    "mean_y": 0.47170911919113356
+   },
+   {
+    "controller": "G",
+    "subtypes": 2,
+    "context": 2,
+    "count": 7597,
+    "mean_p": 0.4658840305049282,
+    "mean_y": 0.4737396340660787
+   },
+   {
+    "controller": "G",
+    "subtypes": 2,
+    "context": 3,
+    "count": 5044,
+    "mean_p": 0.46737249493638944,
+    "mean_y": 0.47898493259318004
+   },
+   {
+    "controller": "G",
+    "subtypes": 2,
+    "context": 4,
+    "count": 7631,
+    "mean_p": 0.46719716558075913,
+    "mean_y": 0.4708426156467042
+   },
+   {
+    "controller": "G",
+    "subtypes": 2,
+    "context": 5,
+    "count": 5159,
+    "mean_p": 0.46785029220866464,
+    "mean_y": 0.4793564644310913
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 0,
+    "count": 3551,
+    "mean_p": 0.4721218120120693,
+    "mean_y": 0.479301605181639
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 1,
+    "count": 1859,
+    "mean_p": 0.4711352285722218,
+    "mean_y": 0.46530392684238836
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 2,
+    "count": 1215,
+    "mean_p": 0.4719483944468405,
+    "mean_y": 0.4839506172839506
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 3,
+    "count": 941,
+    "mean_p": 0.47716638061853467,
+    "mean_y": 0.4973432518597237
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 4,
+    "count": 709,
+    "mean_p": 0.47715399552194304,
+    "mean_y": 0.4386459802538787
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 5,
+    "count": 639,
+    "mean_p": 0.4676574294483813,
+    "mean_y": 0.43661971830985913
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 6,
+    "count": 512,
+    "mean_p": 0.46068183144019964,
+    "mean_y": 0.44921875
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 7,
+    "count": 430,
+    "mean_p": 0.47009589959499504,
+    "mean_y": 0.46744186046511627
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 8,
+    "count": 376,
+    "mean_p": 0.4739066929229578,
+    "mean_y": 0.47606382978723405
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 9,
+    "count": 370,
+    "mean_p": 0.46213599551661383,
+    "mean_y": 0.47297297297297297
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 10,
+    "count": 343,
+    "mean_p": 0.47588965733617433,
+    "mean_y": 0.42565597667638483
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 11,
+    "count": 296,
+    "mean_p": 0.49118968122310136,
+    "mean_y": 0.44932432432432434
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 12,
+    "count": 288,
+    "mean_p": 0.4961626704090522,
+    "mean_y": 0.5138888888888888
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 13,
+    "count": 249,
+    "mean_p": 0.47894782922176304,
+    "mean_y": 0.43775100401606426
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 14,
+    "count": 211,
+    "mean_p": 0.48185433735137284,
+    "mean_y": 0.4549763033175355
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 15,
+    "count": 226,
+    "mean_p": 0.4604862838064463,
+    "mean_y": 0.4911504424778761
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 16,
+    "count": 202,
+    "mean_p": 0.4711065709584267,
+    "mean_y": 0.47029702970297027
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 17,
+    "count": 194,
+    "mean_p": 0.469491865046848,
+    "mean_y": 0.4484536082474227
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 18,
+    "count": 211,
+    "mean_p": 0.4739063281979886,
+    "mean_y": 0.4834123222748815
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 19,
+    "count": 182,
+    "mean_p": 0.4587664935830391,
+    "mean_y": 0.46153846153846156
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 20,
+    "count": 3471,
+    "mean_p": 0.47370958328605933,
+    "mean_y": 0.480841256122155
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 21,
+    "count": 1817,
+    "mean_p": 0.4656710793504518,
+    "mean_y": 0.45844799119427626
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 22,
+    "count": 1207,
+    "mean_p": 0.47432404814337153,
+    "mean_y": 0.4871582435791218
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 23,
+    "count": 856,
+    "mean_p": 0.4540966046277633,
+    "mean_y": 0.44509345794392524
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 24,
+    "count": 710,
+    "mean_p": 0.4745364558903927,
+    "mean_y": 0.5
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 25,
+    "count": 607,
+    "mean_p": 0.4673312827229894,
+    "mean_y": 0.500823723228995
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 26,
+    "count": 543,
+    "mean_p": 0.4789032489891927,
+    "mean_y": 0.44751381215469616
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 27,
+    "count": 418,
+    "mean_p": 0.47389926137940086,
+    "mean_y": 0.46172248803827753
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 28,
+    "count": 423,
+    "mean_p": 0.4637334928967792,
+    "mean_y": 0.491725768321513
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 29,
+    "count": 352,
+    "mean_p": 0.4674713152317663,
+    "mean_y": 0.4602272727272727
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 30,
+    "count": 347,
+    "mean_p": 0.4611460144557927,
+    "mean_y": 0.4610951008645533
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 31,
+    "count": 305,
+    "mean_p": 0.4731005009958157,
+    "mean_y": 0.4524590163934426
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 32,
+    "count": 274,
+    "mean_p": 0.4590683470220172,
+    "mean_y": 0.48175182481751827
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 33,
+    "count": 284,
+    "mean_p": 0.46781539901511604,
+    "mean_y": 0.49295774647887325
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 34,
+    "count": 237,
+    "mean_p": 0.48249771439509753,
+    "mean_y": 0.5189873417721519
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 35,
+    "count": 229,
+    "mean_p": 0.48778998667562407,
+    "mean_y": 0.5502183406113537
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 36,
+    "count": 226,
+    "mean_p": 0.480380081836392,
+    "mean_y": 0.4424778761061947
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 37,
+    "count": 195,
+    "mean_p": 0.4641278361049427,
+    "mean_y": 0.4666666666666667
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 38,
+    "count": 176,
+    "mean_p": 0.47378461926746723,
+    "mean_y": 0.4659090909090909
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 39,
+    "count": 168,
+    "mean_p": 0.47337095031567955,
+    "mean_y": 0.5059523809523809
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 40,
+    "count": 3525,
+    "mean_p": 0.47011981308370854,
+    "mean_y": 0.49361702127659574
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 41,
+    "count": 1749,
+    "mean_p": 0.47407559417501577,
+    "mean_y": 0.4699828473413379
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 42,
+    "count": 1194,
+    "mean_p": 0.46346614640009803,
+    "mean_y": 0.4463986599664992
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 43,
+    "count": 890,
+    "mean_p": 0.4688041264329545,
+    "mean_y": 0.45730337078651684
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 44,
+    "count": 694,
+    "mean_p": 0.46769463917335263,
+    "mean_y": 0.4610951008645533
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 45,
+    "count": 574,
+    "mean_p": 0.46976334090512145,
+    "mean_y": 0.49477351916376305
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 46,
+    "count": 449,
+    "mean_p": 0.4726342445533019,
+    "mean_y": 0.49443207126948774
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 47,
+    "count": 405,
+    "mean_p": 0.47895316788532044,
+    "mean_y": 0.49135802469135803
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 48,
+    "count": 365,
+    "mean_p": 0.467787759826421,
+    "mean_y": 0.4602739726027397
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 49,
+    "count": 351,
+    "mean_p": 0.46048599907987436,
+    "mean_y": 0.4757834757834758
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 50,
+    "count": 329,
+    "mean_p": 0.46643221826895664,
+    "mean_y": 0.48632218844984804
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 51,
+    "count": 288,
+    "mean_p": 0.45294023350667423,
+    "mean_y": 0.4131944444444444
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 52,
+    "count": 262,
+    "mean_p": 0.47053415567491663,
+    "mean_y": 0.5267175572519084
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 53,
+    "count": 270,
+    "mean_p": 0.4511114323984273,
+    "mean_y": 0.5148148148148148
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 54,
+    "count": 237,
+    "mean_p": 0.4641050964600161,
+    "mean_y": 0.48945147679324896
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 55,
+    "count": 198,
+    "mean_p": 0.45032771622106543,
+    "mean_y": 0.5151515151515151
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 56,
+    "count": 192,
+    "mean_p": 0.4567643660222118,
+    "mean_y": 0.4583333333333333
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 57,
+    "count": 205,
+    "mean_p": 0.474017106059233,
+    "mean_y": 0.5024390243902439
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 58,
+    "count": 188,
+    "mean_p": 0.4840437622484087,
+    "mean_y": 0.5904255319148937
+   },
+   {
+    "controller": "G",
+    "subtypes": 20,
+    "context": 59,
+    "count": 186,
+    "mean_p": 0.48890604183617203,
+    "mean_y": 0.478494623655914
+   }
+  ]
+ }
+}

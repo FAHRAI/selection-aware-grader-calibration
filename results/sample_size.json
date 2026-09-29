@@ -1,0 +1,31 @@
+{
+ "pilot_bundles": 256,
+ "sd": {
+  "learning_SW_minus_SN_matched": 0.0026682954215892112,
+  "shadow_MSE_SW_minus_SN_matched": 0.0005667008675927961,
+  "learning_SW_minus_SN_G": 0.0036241632303095823,
+  "learning_SW_minus_SN_C80": 0.004279686393797767,
+  "learning_SW_minus_SN_C95": 0.004042468423740784,
+  "controller_C80_minus_G": 0.005143414674297842,
+  "controller_C95_minus_G": 0.004853368668260106,
+  "controller_C80_minus_C95": 0.005411780766502308,
+  "prior_interaction_weak_minus_matched": 0.00415839911914336,
+  "learning_SW_minus_SF_matched": 0.004517253020618879,
+  "learning_SW_minus_UW_matched": 0.004729022862106039
+ },
+ "required_bundles": {
+  "learning_SW_minus_SN_matched": 163.21827231183212,
+  "shadow_MSE_SW_minus_SN_matched": 29.44887447094035,
+  "learning_SW_minus_SN_G": 91.42180422594235,
+  "learning_SW_minus_SN_C80": 127.48473345980217,
+  "learning_SW_minus_SN_C95": 113.74375482973495,
+  "controller_C80_minus_G": 184.13543301045527,
+  "controller_C95_minus_G": 163.9535605323853,
+  "controller_C80_minus_C95": 203.85185976328205,
+  "prior_interaction_weak_minus_matched": 99.10448371732265,
+  "learning_SW_minus_SF_matched": 116.9471916065095,
+  "learning_SW_minus_UW_matched": 128.1692344405168
+ },
+ "determining_contrast": "controller_C80_minus_C95",
+ "final_bundles": 512
+}

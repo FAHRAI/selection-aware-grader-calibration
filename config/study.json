@@ -1,0 +1,246 @@
+{
+  "seeds": {
+    "pilot": 2380728833,
+    "final": 4010317027
+  },
+  "pilot_bundles": 256,
+  "sample_size": {
+    "minimum": 512,
+    "round_to": 128
+  },
+  "hidden_bundles": 16,
+  "family_alpha": {
+    "A": 0.05,
+    "B": 0.05,
+    "C": 0.05
+  },
+  "family_decisions": {
+    "A": 3,
+    "B": 6,
+    "C": 3
+  },
+  "equivalence": {
+    "contrast": "learning_SW_minus_SN_matched",
+    "margin": 0.001
+  },
+  "registry": [
+    {
+      "id": "learning_SW_minus_SN_matched",
+      "family": "A",
+      "unit": "success_probability",
+      "expression": "mean_r,j [L(SW,r,j,matched)-L(SN,r,j,matched)]",
+      "target_half_width": 0.0005,
+      "decisions": ["difference", "equivalence"],
+      "terms": [
+        ["delayed_success", "SW", "G", 2, "matched", "1/6"],
+        ["delayed_success", "SN", "G", 2, "matched", "-1/6"],
+        ["delayed_success", "SW", "G", 20, "matched", "1/6"],
+        ["delayed_success", "SN", "G", 20, "matched", "-1/6"],
+        ["delayed_success", "SW", "C80", 2, "matched", "1/6"],
+        ["delayed_success", "SN", "C80", 2, "matched", "-1/6"],
+        ["delayed_success", "SW", "C80", 20, "matched", "1/6"],
+        ["delayed_success", "SN", "C80", 20, "matched", "-1/6"],
+        ["delayed_success", "SW", "C95", 2, "matched", "1/6"],
+        ["delayed_success", "SN", "C95", 2, "matched", "-1/6"],
+        ["delayed_success", "SW", "C95", 20, "matched", "1/6"],
+        ["delayed_success", "SN", "C95", 20, "matched", "-1/6"]
+      ]
+    },
+    {
+      "id": "shadow_MSE_SW_minus_SN_matched",
+      "family": "A",
+      "unit": "squared_probability",
+      "expression": "mean_r,j [MSE(SW,r,j,matched)-MSE(SN,r,j,matched)]",
+      "target_half_width": 0.00025,
+      "decisions": ["difference"],
+      "terms": [
+        ["shadow_error_mse_final", "SW", "G", 2, "matched", "1/6"],
+        ["shadow_error_mse_final", "SN", "G", 2, "matched", "-1/6"],
+        ["shadow_error_mse_final", "SW", "G", 20, "matched", "1/6"],
+        ["shadow_error_mse_final", "SN", "G", 20, "matched", "-1/6"],
+        ["shadow_error_mse_final", "SW", "C80", 2, "matched", "1/6"],
+        ["shadow_error_mse_final", "SN", "C80", 2, "matched", "-1/6"],
+        ["shadow_error_mse_final", "SW", "C80", 20, "matched", "1/6"],
+        ["shadow_error_mse_final", "SN", "C80", 20, "matched", "-1/6"],
+        ["shadow_error_mse_final", "SW", "C95", 2, "matched", "1/6"],
+        ["shadow_error_mse_final", "SN", "C95", 2, "matched", "-1/6"],
+        ["shadow_error_mse_final", "SW", "C95", 20, "matched", "1/6"],
+        ["shadow_error_mse_final", "SN", "C95", 20, "matched", "-1/6"]
+      ]
+    },
+    {
+      "id": "learning_SW_minus_SN_G",
+      "family": "B",
+      "unit": "success_probability",
+      "expression": "d_G(matched)",
+      "target_half_width": 0.001,
+      "decisions": ["difference"],
+      "terms": [
+        ["delayed_success", "SW", "G", 2, "matched", "1/2"],
+        ["delayed_success", "SN", "G", 2, "matched", "-1/2"],
+        ["delayed_success", "SW", "G", 20, "matched", "1/2"],
+        ["delayed_success", "SN", "G", 20, "matched", "-1/2"]
+      ]
+    },
+    {
+      "id": "learning_SW_minus_SN_C80",
+      "family": "B",
+      "unit": "success_probability",
+      "expression": "d_C80(matched)",
+      "target_half_width": 0.001,
+      "decisions": ["difference"],
+      "terms": [
+        ["delayed_success", "SW", "C80", 2, "matched", "1/2"],
+        ["delayed_success", "SN", "C80", 2, "matched", "-1/2"],
+        ["delayed_success", "SW", "C80", 20, "matched", "1/2"],
+        ["delayed_success", "SN", "C80", 20, "matched", "-1/2"]
+      ]
+    },
+    {
+      "id": "learning_SW_minus_SN_C95",
+      "family": "B",
+      "unit": "success_probability",
+      "expression": "d_C95(matched)",
+      "target_half_width": 0.001,
+      "decisions": ["difference"],
+      "terms": [
+        ["delayed_success", "SW", "C95", 2, "matched", "1/2"],
+        ["delayed_success", "SN", "C95", 2, "matched", "-1/2"],
+        ["delayed_success", "SW", "C95", 20, "matched", "1/2"],
+        ["delayed_success", "SN", "C95", 20, "matched", "-1/2"]
+      ]
+    },
+    {
+      "id": "controller_C80_minus_G",
+      "family": "B",
+      "unit": "success_probability",
+      "expression": "d_C80(matched)-d_G(matched)",
+      "target_half_width": 0.001,
+      "decisions": ["difference"],
+      "terms": [
+        ["delayed_success", "SW", "C80", 2, "matched", "1/2"],
+        ["delayed_success", "SN", "C80", 2, "matched", "-1/2"],
+        ["delayed_success", "SW", "C80", 20, "matched", "1/2"],
+        ["delayed_success", "SN", "C80", 20, "matched", "-1/2"],
+        ["delayed_success", "SW", "G", 2, "matched", "-1/2"],
+        ["delayed_success", "SN", "G", 2, "matched", "1/2"],
+        ["delayed_success", "SW", "G", 20, "matched", "-1/2"],
+        ["delayed_success", "SN", "G", 20, "matched", "1/2"]
+      ]
+    },
+    {
+      "id": "controller_C95_minus_G",
+      "family": "B",
+      "unit": "success_probability",
+      "expression": "d_C95(matched)-d_G(matched)",
+      "target_half_width": 0.001,
+      "decisions": ["difference"],
+      "terms": [
+        ["delayed_success", "SW", "C95", 2, "matched", "1/2"],
+        ["delayed_success", "SN", "C95", 2, "matched", "-1/2"],
+        ["delayed_success", "SW", "C95", 20, "matched", "1/2"],
+        ["delayed_success", "SN", "C95", 20, "matched", "-1/2"],
+        ["delayed_success", "SW", "G", 2, "matched", "-1/2"],
+        ["delayed_success", "SN", "G", 2, "matched", "1/2"],
+        ["delayed_success", "SW", "G", 20, "matched", "-1/2"],
+        ["delayed_success", "SN", "G", 20, "matched", "1/2"]
+      ]
+    },
+    {
+      "id": "controller_C80_minus_C95",
+      "family": "B",
+      "unit": "success_probability",
+      "expression": "d_C80(matched)-d_C95(matched)",
+      "target_half_width": 0.001,
+      "decisions": ["difference"],
+      "terms": [
+        ["delayed_success", "SW", "C80", 2, "matched", "1/2"],
+        ["delayed_success", "SN", "C80", 2, "matched", "-1/2"],
+        ["delayed_success", "SW", "C80", 20, "matched", "1/2"],
+        ["delayed_success", "SN", "C80", 20, "matched", "-1/2"],
+        ["delayed_success", "SW", "C95", 2, "matched", "-1/2"],
+        ["delayed_success", "SN", "C95", 2, "matched", "1/2"],
+        ["delayed_success", "SW", "C95", 20, "matched", "-1/2"],
+        ["delayed_success", "SN", "C95", 20, "matched", "1/2"]
+      ]
+    },
+    {
+      "id": "prior_interaction_weak_minus_matched",
+      "family": "C",
+      "unit": "success_probability",
+      "expression": "d(historical_weak)-d(matched)",
+      "target_half_width": 0.001,
+      "decisions": ["difference"],
+      "terms": [
+        ["delayed_success", "SW", "G", 2, "historical_weak", "1/6"],
+        ["delayed_success", "SN", "G", 2, "historical_weak", "-1/6"],
+        ["delayed_success", "SW", "G", 20, "historical_weak", "1/6"],
+        ["delayed_success", "SN", "G", 20, "historical_weak", "-1/6"],
+        ["delayed_success", "SW", "C80", 2, "historical_weak", "1/6"],
+        ["delayed_success", "SN", "C80", 2, "historical_weak", "-1/6"],
+        ["delayed_success", "SW", "C80", 20, "historical_weak", "1/6"],
+        ["delayed_success", "SN", "C80", 20, "historical_weak", "-1/6"],
+        ["delayed_success", "SW", "C95", 2, "historical_weak", "1/6"],
+        ["delayed_success", "SN", "C95", 2, "historical_weak", "-1/6"],
+        ["delayed_success", "SW", "C95", 20, "historical_weak", "1/6"],
+        ["delayed_success", "SN", "C95", 20, "historical_weak", "-1/6"],
+        ["delayed_success", "SW", "G", 2, "matched", "-1/6"],
+        ["delayed_success", "SN", "G", 2, "matched", "1/6"],
+        ["delayed_success", "SW", "G", 20, "matched", "-1/6"],
+        ["delayed_success", "SN", "G", 20, "matched", "1/6"],
+        ["delayed_success", "SW", "C80", 2, "matched", "-1/6"],
+        ["delayed_success", "SN", "C80", 2, "matched", "1/6"],
+        ["delayed_success", "SW", "C80", 20, "matched", "-1/6"],
+        ["delayed_success", "SN", "C80", 20, "matched", "1/6"],
+        ["delayed_success", "SW", "C95", 2, "matched", "-1/6"],
+        ["delayed_success", "SN", "C95", 2, "matched", "1/6"],
+        ["delayed_success", "SW", "C95", 20, "matched", "-1/6"],
+        ["delayed_success", "SN", "C95", 20, "matched", "1/6"]
+      ]
+    },
+    {
+      "id": "learning_SW_minus_SF_matched",
+      "family": "C",
+      "unit": "success_probability",
+      "expression": "mean_r,j [L(SW)-L(SF)] under matched prior",
+      "target_half_width": 0.001,
+      "decisions": ["difference"],
+      "terms": [
+        ["delayed_success", "SW", "G", 2, "matched", "1/6"],
+        ["delayed_success", "SF", "G", 2, "matched", "-1/6"],
+        ["delayed_success", "SW", "G", 20, "matched", "1/6"],
+        ["delayed_success", "SF", "G", 20, "matched", "-1/6"],
+        ["delayed_success", "SW", "C80", 2, "matched", "1/6"],
+        ["delayed_success", "SF", "C80", 2, "matched", "-1/6"],
+        ["delayed_success", "SW", "C80", 20, "matched", "1/6"],
+        ["delayed_success", "SF", "C80", 20, "matched", "-1/6"],
+        ["delayed_success", "SW", "C95", 2, "matched", "1/6"],
+        ["delayed_success", "SF", "C95", 2, "matched", "-1/6"],
+        ["delayed_success", "SW", "C95", 20, "matched", "1/6"],
+        ["delayed_success", "SF", "C95", 20, "matched", "-1/6"]
+      ]
+    },
+    {
+      "id": "learning_SW_minus_UW_matched",
+      "family": "C",
+      "unit": "success_probability",
+      "expression": "mean_r,j [L(SW)-L(UW)] under matched prior",
+      "target_half_width": 0.001,
+      "decisions": ["difference"],
+      "terms": [
+        ["delayed_success", "SW", "G", 2, "matched", "1/6"],
+        ["delayed_success", "UW", "G", 2, "matched", "-1/6"],
+        ["delayed_success", "SW", "G", 20, "matched", "1/6"],
+        ["delayed_success", "UW", "G", 20, "matched", "-1/6"],
+        ["delayed_success", "SW", "C80", 2, "matched", "1/6"],
+        ["delayed_success", "UW", "C80", 2, "matched", "-1/6"],
+        ["delayed_success", "SW", "C80", 20, "matched", "1/6"],
+        ["delayed_success", "UW", "C80", 20, "matched", "-1/6"],
+        ["delayed_success", "SW", "C95", 2, "matched", "1/6"],
+        ["delayed_success", "UW", "C95", 2, "matched", "-1/6"],
+        ["delayed_success", "SW", "C95", 20, "matched", "1/6"],
+        ["delayed_success", "UW", "C95", 20, "matched", "-1/6"]
+      ]
+    }
+  ]
+}

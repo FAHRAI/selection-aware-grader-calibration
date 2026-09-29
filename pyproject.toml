@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=84"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grader-calibration"
+version = "1.0.0"
+description = "Selection-aware estimation of grader error rates under a targeted audit in a simulated adaptive tutor"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Oleksandr Kholodniak", email = "o.o.kholodniak@khai.edu" },
+    { name = "Oleksandr Prokhorov", email = "o.prokhorov@khai.edu" },
+]
+requires-python = ">=3.10"
+dependencies = ["numpy>=2.0"]
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.8"]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
