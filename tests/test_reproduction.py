@@ -78,7 +78,7 @@ def test_reported_primary_results():
     assert all(row["target_met"] for row in registered.values())
 
 
-@pytest.mark.skipif(not (DATA / "final").exists(), reason="bundles not generated")
+@pytest.mark.skipif(not (DATA / "final").exists(), reason="bundle data not available")
 def test_endpoints_and_shadow_errors_reproduce_from_data(endpoints):
     for phase, n in (("pilot", CONFIG["pilot_bundles"]), ("final", FINAL_BUNDLES)):
         matrix = experiment.endpoint_matrix(experiment.stored_bundles(DATA / phase, n))
