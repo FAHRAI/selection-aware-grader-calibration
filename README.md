@@ -81,7 +81,7 @@ reuse stored bundles and simulate only what is missing; on an empty `data/` dire
 `results/endpoints.csv.gz` holds every primitive endpoint of the 256 pilot and 512 final bundles. The bundles
 themselves (`data/`, 5.4 GB: every learner trajectory, audit and estimator update; final bundles 0–15 also keep the
 hidden responses and mastery states) are archived on Zenodo:
-https://doi.org/10.5281/zenodo.PENDING
+https://doi.org/10.5281/zenodo.23407479
 
 They are deterministic in the seeds of `config/study.json`, and the `pilot` and `final` commands regenerate them bit
 for bit.

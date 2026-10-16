@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code or data, please cite the paper and this repository."
 title: "Selection-aware grader calibration and learner outcomes in adaptive learning systems under a fixed audit budget: simulation code and results"
 version: 1.0.0
-date-released: 2026-09-29
+date-released: 2026-10-16
 license: MIT
 repository-code: "https://github.com/FAHRAI/selection-aware-grader-calibration"
 authors:
