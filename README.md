@@ -2,8 +2,8 @@
 
 Code, configuration and results for the paper
 
-> O. Kholodniak, O. Prokhorov. *Selection-aware grader calibration and learner outcomes under a fixed audit budget:
-> a simulation study.* Manuscript under review, 2026.
+> O. Kholodniak, O. Prokhorov. *Selection-aware grader calibration and learner outcomes in adaptive learning systems
+> under a fixed audit budget: a simulation study.* Manuscript under review, 2026.
 
 ## The study in brief
 
@@ -48,7 +48,7 @@ on import. Other platforms may differ in the last digits.
 
 ```bash
 python3.12 -m venv .venv && source .venv/bin/activate
-pip install -e ".[figures,test]"
+pip install -r requirements-lock.txt -e ".[figures,test]"
 pytest
 python -m grader_calibration figures
 ```
@@ -65,7 +65,7 @@ python -m grader_calibration analyze   # endpoints.csv.gz, analysis.json and sha
 ```
 
 reuse stored bundles and simulate only what is missing; on an empty `data/` directory they rerun the study
-(about five minutes with four workers, 5.1 GB).
+(a few minutes on a laptop, 5.4 GB).
 
 ## Results
 
@@ -79,7 +79,7 @@ reuse stored bundles and simulate only what is missing; on an empty `data/` dire
 ## Data
 
 `results/endpoints.csv.gz` holds every primitive endpoint of the 256 pilot and 512 final bundles. The bundles
-themselves (`data/`, 5.1 GB: every learner trajectory, audit and estimator update; final bundles 0–15 also keep the
+themselves (`data/`, 5.4 GB: every learner trajectory, audit and estimator update; final bundles 0–15 also keep the
 hidden responses and mastery states) are archived on Zenodo:
 https://doi.org/10.5281/zenodo.PENDING
 
